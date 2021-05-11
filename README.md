@@ -1,8 +1,9 @@
 # Prework-Chessgame
 Prework practicing chess pieces moves with javascript
- ```
+
 You can watch it on:
-[hhh](https://vaezman.netlify.app/chessgame/chessgame.html)
+ ```
+https://vaezman.netlify.app/chessgame/chessgame.html
 ```
 **Technologies**<br>
 `HTML5`
