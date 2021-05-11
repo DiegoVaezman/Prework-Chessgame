@@ -1,5 +1,6 @@
 # Prework-Chessgame
-[!ChessGame_img](/img/chessgame_img.png)
+
+<img src="/img/chessgame_img.png"  width="40%" >
 Prework practicing chess pieces moves with javascript
 
 You can watch it on:
