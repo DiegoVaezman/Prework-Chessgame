@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Chess Game - movements</title>
+<link href="chessgame.css" type="text/css" rel="stylesheet"></link>
+<script type="text/javascript" src="chessgame.js"></script>
+</head>
+
+    
+<body>
+    
+    <header>
+        <img class="imgpieceslft" src="img/headerpieces1.jpg">
+        <div class="title"><h1>HTML Chess Game</h1></div>
+        <img class="imgpiecesrgt" src="img/headerpieces2.jpg">
+    </header>
+
+    
+    
+    <main class="main">
+        <div class="mainText">
+            <h1>KNOWING THE MOVEMENTS: Select one piece and watch its movement.</h1>
+           
+            <input type="radio" id="buttonking" name="pieces" class="button" value="king" onclick="document.getElementById('image').src='img/king.jpg', setValue(`king`), mostrardiv()"><label for="buttonking">The king (♔,♚)</label></input>
+            <p>
+            A king can move one square in any direction (horizontally, vertically, or
+            diagonally) unless the square is already occupied by a friendly piece or
+            the move would place the king in check.
+            </p>
+           
+            <input type="radio" id="buttonqueen" name="pieces" class="button" onclick="document.getElementById('image').src='img/queen.jpg', setValue(`queen`), mostrardiv()"><label for="buttonqueen">The queen (♕, ♛)</label>
+            <p>
+            The queen can be moved any number of unoccupied squares in a straight line
+            vertically, horizontally, or diagonally, thus combining the moves of the
+            rook and bishop.
+            </p>
+         
+            <input type="radio" id="buttonbishop" name="pieces" class="button" onclick="document.getElementById('image').src='img/bishop.jpg', setValue(`bishop`), mostrardiv()"><label for="buttonbishop">The bishop (♗,♝)</label>
+            <p>
+            The bishops may be differentiated according to which wing they begin on,
+            i.e. the king's bishop and queen's bishop. As a consequence of its
+            diagonal movement, each bishop always remains on either the white or black
+            squares, and so it is also common to refer to them as light-squared or
+            dark-squared bishops.
+            </p>
+          
+            <input type="radio" id="buttonknight" name="pieces" class="button" onclick="document.getElementById('image').src='img/knight.jpg', setValue(`knight`), mostrardiv()"><label for="buttonknight">The knight (♘,♞)</label>
+            <p>
+            The knight move is unusual among chess pieces. It moves to a square that
+            is two squares away horizontally and one square vertically, or two squares
+            vertically and one square horizontally. The complete move therefore looks
+            like the letter "L". Unlike all other standard chess pieces, the knight
+            can "jump over" all other pieces (of either color) to its destination
+            square.
+            </p>
+           
+            <input type="radio" id="buttonrook" name="pieces" class="button" onclick="document.getElementById('image').src='img/rook.jpg', setValue(`rook`), mostrardiv()"><label for="buttonrook">The rook (♖,♜)</label>
+            <p>
+            The rook moves horizontally or vertically, through any number of
+            unoccupied squares (see diagram).
+            </p>
+           
+            <input type="radio" id="buttonpawn" name="pieces" class="button" onclick="document.getElementById('image').src='img/pawn.jpg', setValue(`pawn`), mostrardiv()"><label for="buttonpawn">The pawn (♙,♟)</label>
+            <p>
+            Unlike the other pieces, pawns cannot move backwards. Normally a pawn
+            moves by advancing a single square, but the first time a pawn moves, it
+            has the option of advancing two squares.
+            </p>
+        
+            <div id="divtable" class="divtable">
+                <h1 class="alert" id="alert">Select one piece on the list to see its movement.</h1>
+                <img class="table" src="img/table.jpg">
+                <img class="knight" src="img/knighttr.png">
+                <img class="knight2" src="img/knighttrinv.png">
+                <img class="rook" id="rook" src="img/rooktr.png">
+                <img class="rook2" id="rook" src="img/rooktr.png">
+                <img class="bishop" id="bishop" src="img/bishoptr.png">
+                <img class="bishop2" id="bishop" src="img/bishoptrinv.png">
+                <img class="king" id="king" src="img/kingtr.png">
+                <img class="queen" id="queen" src="img/queentr.png">
+                <img class="pawn" id="pawn" src="img/pawntr.png">
+                <img class="pawn2" id="pawn" src="img/pawntr2.png">
+                <img class="pawn3" id="pawn" src="img/pawntr2.png">
+                <img class="pawn4" id="pawn" src="img/pawntr2.png">
+                <img class="pawn5" id="pawn" src="img/pawntr2.png">
+                <img class="pawn6" id="pawn" src="img/pawntr2.png">
+                <img class="pawn7" id="pawn" src="img/pawntr2.png">
+                <img class="pawn8" id="pawn" src="img/pawntr2.png">
+            </div>
+        </div>
+        <asaid>
+            <img class="image" id="image" src="img/imgin.jpg" alt="piece_image" width="340" height="400">
+            <input type="checkbox" id="buttonexample" class="buttonexample" onchange="mostrardiv()"><label id="buttonexamplelabel" for="buttonexample">Example</label>
+        </asaid>
+    </div>
+
+  
+</body>
+</html>
